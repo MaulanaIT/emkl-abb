@@ -1,0 +1,284 @@
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+[list]::-webkit-calendar-picker-indicator {
+    display: none !important;
+}
+
+/* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+::-webkit-scrollbar {
+    background-color: #fff;
+    width: 8px
+}
+
+/* background of the scrollbar except button or resizer */
+::-webkit-scrollbar-track {
+    background-color: #fff
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: #f4f4f4
+}
+
+/* scrollbar itself */
+::-webkit-scrollbar-thumb {
+    background-color: #000040;
+    border-radius: 16px;
+    border: 1px solid #fff
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a0a0a5;
+    border: 4px solid #f4f4f4
+}
+
+/* set button(top and bottom of the scrollbar) */
+::-webkit-scrollbar-button {
+    display: none
+}
+
+@media screen {
+    #screenarea {
+        display: block !important;
+    }
+
+    #printarea {
+        display: none !important;
+    }
+}
+
+@media print {
+    #screenarea {
+        display: none !important;
+    }
+
+    #printarea {
+        display: block !important;
+    }
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    position: relative !important;
+}
+
+.btn {
+    box-shadow: none !important;
+}
+
+.col {
+    margin: 0;
+}
+
+.container-login {
+    left: 50%;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    background: white;
+    color: black;
+    margin-left: 0px;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 60px 30px 30px;
+    top: 0;
+    transition: 0.5s;
+}
+
+.content.active {
+    margin-left: 300px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.card-form {
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loader {
+    -webkit-animation: spin 1s linear infinite;
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #063970;
+    height: 36px;
+    width: 36px;
+    /* Safari */
+    animation: spin 0.5s linear infinite;
+}
+
+.loader-percentage {
+    color: black;
+    font-size: 14px;
+    transition: all 2s;
+}
+
+.loading-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    transition: all 0.1s;
+    width: 100vw;
+    z-index: 12;
+}
+
+.loading-overlay.active {
+    opacity: 1;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 12;
+}
+
+.popup-loader {
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    left: 50%;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.primary-color {
+    background: #063970;
+}
+
+.primary-text-color {
+    color: #063970;
+}
+
+.text-size-1 {
+    font-size: 12px;
+}
+
+.text-size-2 {
+    font-size: 14px;
+}
+
+.text-size-3 {
+    font-size: 16px;
+}
+
+.text-size-4 {
+    font-size: 18px;
+}
+
+.text-size-5 {
+    font-size: 20px;
+}
+
+.text-size-6 {
+    font-size: 22px;
+}
+
+.text-size-7 {
+    font-size: 24px;
+}
+
+.text-size-8 {
+    font-size: 26px;
+}
+
+.text-size-9 {
+    font-size: 28px;
+}
+
+.text-size-10 {
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .content {
+        margin-left: 0px;
+        padding: 20px;
+        padding-bottom: 60px;
+    }
+
+    .content.active {
+        margin-left: 0px;
+    }
+
+    .text-size-1 {
+        font-size: 10px;
+    }
+
+    .text-size-2 {
+        font-size: 12px;
+    }
+
+    .text-size-3 {
+        font-size: 14px;
+    }
+
+    .text-size-4 {
+        font-size: 16px;
+    }
+
+    .text-size-5 {
+        font-size: 18px;
+    }
+
+    .text-size-6 {
+        font-size: 20px;
+    }
+
+    .text-size-7 {
+        font-size: 22px;
+    }
+
+    .text-size-8 {
+        font-size: 24px;
+    }
+
+    .text-size-9 {
+        font-size: 26px;
+    }
+
+    .text-size-10 {
+        font-size: 28px;
+    }
+}

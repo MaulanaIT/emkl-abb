@@ -1,0 +1,14 @@
+.toggle {
+    background: transparent;
+    cursor: pointer;
+    left: 0px;
+    padding: 12px;
+    position: absolute;
+    top: 0px;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.toggle.active {
+    left: 300px;
+}
